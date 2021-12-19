@@ -1,0 +1,9 @@
+.editorconfig
+.env
+.prettierignore
+.prettierrc
+/.husky/
+/.vscode/
+lib
+bin
+node_modules/
