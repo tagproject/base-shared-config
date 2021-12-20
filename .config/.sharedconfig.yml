@@ -1,2 +1,2 @@
 overrideScripts:
-  "prepare:config": "node --experimental-specifier-resolution=node ./lib/index.js"
+  "prepare:config": "exit 0"
