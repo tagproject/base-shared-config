@@ -12,9 +12,11 @@ Source code now under `MIT` license.
 # :bug: Bug Fixes
 
 - Fix configs [`9fa57b1`](https://github.com/tagproject/base-shared-config/commit/9fa57b170b8cbdd69c764a4afe926f356c00a9f3)
+- Fix config script [`7e40ba9`](https://github.com/tagproject/base-shared-config/commit/7e40ba91a4b2d118995e29f3e96ee6760ba47732)
 
 # :memo: Internal changes
 
+- **[Ci]** Fix config script path [`f36602a`](https://github.com/tagproject/base-shared-config/commit/f36602a2dfba54647b6e88d71c5463dc61072013) [`34ff224`](https://github.com/tagproject/base-shared-config/commit/34ff224417ee3226cf16bb56f9d80eb1a3a8e6a2) [`0e5e12c`](https://github.com/tagproject/base-shared-config/commit/0e5e12c1e578916972f47acd36b96e15c4255eab)
 - Add readme and other docs [`75a33c6`](https://github.com/tagproject/base-shared-config/commit/75a33c6d6c2912cc9bb65c916b50624652dc2246)
 
 ---
