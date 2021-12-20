@@ -1,0 +1,2 @@
+overrideScripts:
+  "prepare:config": "exit 0"
