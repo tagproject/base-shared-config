@@ -8,14 +8,14 @@ mergeRules:
 
 ignorePatterns:
   ".gitignore": [
-    ".editorconfig",
     ".env",
-    ".prettierignore",
-    ".prettierrc",
+    "/.editorconfig",
     "/.husky/",
+    "/.prettierignore",
+    "/.prettierrc",
     "/.vscode/",
-    "lib",
     "bin",
+    "lib",
     "node_modules/",
   ]
   ".npmignore": [
@@ -30,7 +30,6 @@ ignorePatterns:
     ".sharedconfig.yml",
     ".vscode",
     "CODE_OF_CONDUCT.md",
-    "SECURITY.md",
     "codecov.yml",
     "docs/",
     "example/",

@@ -34,26 +34,25 @@ jobs:
         run: |
           echo Node: $(node -v)
           echo NPM: $(npm -v)
-          npm i semver --no-package-lock
-          CONFIG=$(node .github/scripts/config.js | sed 's/ //g')
+          npm i semver --no-package-lock --loglevel=error
+          CONFIG=$(node .github/config.js | sed 's/ //g')
           echo "::set-output name=config::$CONFIG"
           echo $CONFIG
 
   publish:
     name: Publish
     needs: [ config ]
-    strategy:
-      matrix:
-        node-version: ["${{ env.NODE_VERSION }}"]
+    env:
+      NODE_VERSION: ${{ fromJson(needs.config.outputs.config).node.main }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v1
 
-    - name: Setup Node.js v${{ matrix.node-version }}
+    - name: Setup Node.js v${{ env.NODE_VERSION }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ env.NODE_VERSION }}
 
     - name: Build
       run: |
@@ -69,18 +68,17 @@ jobs:
   release:
     name: Create Release
     needs: [ publish, config ]
-    strategy:
-      matrix:
-        node-version: ["${{ env.NODE_VERSION }}"]
+    env:
+      NODE_VERSION: ${{ fromJson(needs.config.outputs.config).node.main }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js v${{ env.NODE_VERSION }}
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ env.NODE_VERSION }}
 
     - name: Get package version
       run: node -p -e '`PACKAGE_VERSION=${require("./package.json").version}`' >> $GITHUB_ENV
