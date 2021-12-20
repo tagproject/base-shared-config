@@ -1,7 +1,7 @@
 import semver from 'semver';
 import { promises as fs } from 'fs';
 
-const packageData = await fs.readFile(new URL('../package.json', import.meta.url));
+const packageData = await fs.readFile(new URL('../../package.json', import.meta.url));
 const { engines } = JSON.parse(packageData);
 
 const comparators = semver
