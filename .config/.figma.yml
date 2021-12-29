@@ -1,0 +1,4 @@
+- name: Banner
+  fileName: banner
+  format: svg
+  scale: 1

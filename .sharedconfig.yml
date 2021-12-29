@@ -10,6 +10,7 @@ ignorePatterns:
   ".gitignore": [
     ".env",
     "/.editorconfig",
+    "/.figma.yml",
     "/.husky/",
     "/.prettierignore",
     "/.prettierrc",
@@ -22,6 +23,7 @@ ignorePatterns:
     ".config",
     ".editorconfig",
     ".env",
+    ".figma.yml",
     ".gitattributes",
     ".github",
     ".husky",
@@ -42,12 +44,13 @@ executableFiles: [
 ]
 
 scripts:
+  "build": "node --experimental-specifier-resolution=node node_modules/.bin/standard-shared-config build"
+  "generate": "npm-run-all generate:*"
+  "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
+  "generate:media": "node --experimental-specifier-resolution=node node_modules/.bin/figma-portal extract -d media -p GitHub"
+  "prepare": "npm-run-all prepare:*"
   "prepare:config": "node --experimental-specifier-resolution=node node_modules/.bin/base-shared-config"
   "prepare:husky": "husky install"
-  "prepare": "npm-run-all prepare:*"
-  "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
-  "generate": "npm-run-all generate:*"
-  "build": "node --experimental-specifier-resolution=node node_modules/.bin/standard-shared-config build"
   "release": "npm-run-all prepare build generate"
 
 dependencies:
