@@ -1,7 +1,5 @@
-.editorconfig
 .env
 .prettierignore
-.prettierrc
 /.editorconfig
 /.husky/
 /.prettierignore

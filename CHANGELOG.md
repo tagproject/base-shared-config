@@ -1,23 +1,10 @@
-# Important Changes
-
-## License
-
-Source code now under `MIT` license.
-
-# :fire: Improvements
-
-- Add base configs [`70451f9`](https://github.com/tagproject/base-shared-config/commit/70451f9b791461c54cd98eac01fc8a388f44b52d)
-- Share configs to package [`607ec58`](https://github.com/tagproject/base-shared-config/commit/607ec5804620c238d729e70b0217121bb4247e6f)
-
 # :bug: Bug Fixes
 
-- Fix configs [`9fa57b1`](https://github.com/tagproject/base-shared-config/commit/9fa57b170b8cbdd69c764a4afe926f356c00a9f3)
-- Fix config script [`7e40ba9`](https://github.com/tagproject/base-shared-config/commit/7e40ba91a4b2d118995e29f3e96ee6760ba47732)
+- Add sync job to release job needs [`2dcdef2`](https://github.com/tagproject/base-shared-config/commit/2dcdef2dc188f619a84d1b27c8235a15bd11b674)
 
 # :memo: Internal changes
 
-- **[Ci]** Fix config script path [`f36602a`](https://github.com/tagproject/base-shared-config/commit/f36602a2dfba54647b6e88d71c5463dc61072013) [`34ff224`](https://github.com/tagproject/base-shared-config/commit/34ff224417ee3226cf16bb56f9d80eb1a3a8e6a2) [`0e5e12c`](https://github.com/tagproject/base-shared-config/commit/0e5e12c1e578916972f47acd36b96e15c4255eab)
-- Add readme and other docs [`75a33c6`](https://github.com/tagproject/base-shared-config/commit/75a33c6d6c2912cc9bb65c916b50624652dc2246)
+- Fix shared config badge [`cb063ae`](https://github.com/tagproject/base-shared-config/commit/cb063ae05be5d732b1ed2da92778a160151b37ac)
 
 ---
 
