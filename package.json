@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/base-shared-config",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Base shared config for tagproject packages",
   "license": "MIT",
   "homepage": "https://github.com/tagproject/base-shared-config#readme",
