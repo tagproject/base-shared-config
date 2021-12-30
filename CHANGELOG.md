@@ -1,6 +1,13 @@
-# :bug: Bug Fixes
+# Important Changes
 
-- Add `figma-portal` dependency in sharedconfig [`5bf03a7`](https://github.com/tagproject/base-shared-config/commit/5bf03a7d6de33c9f257589577f03e07f169d05ff)
+## Dependencies
+
+<details>
+<summary>Dev Dependencies</summary>
+
+- Bumped **[figma-portal](https://www.npmjs.com/package/figma-portal/v/0.10.0)** from `0.9.3` to `0.10.0`
+
+</details>
 
 ---
 
