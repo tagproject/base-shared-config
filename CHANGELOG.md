@@ -3,11 +3,23 @@
 ## Dependencies
 
 <details>
-<summary>Dev Dependencies</summary>
+<summary>Dependencies</summary>
 
-- Bumped **[figma-portal](https://www.npmjs.com/package/figma-portal/v/0.10.0)** from `0.9.3` to `0.10.0`
+- Changed **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config)** from `^4.0.7` to `^4.0.8`
 
 </details>
+
+<details>
+<summary>Dev Dependencies</summary>
+
+- Changed **[figma-portal](https://www.npmjs.com/package/figma-portal)** from `^0.10.0` to `^0.10.1`
+- Bumped **[changelog-guru](https://www.npmjs.com/package/changelog-guru)** from `^3.0.2` to `^4.0.1`
+
+</details>
+
+# :bug: Bug Fixes
+
+- Remove `changelog-guru` version [`c6591c6`](https://github.com/tagproject/base-shared-config/commit/c6591c6b62104e8725597ca15ba39fe84bc5f808)
 
 ---
 
