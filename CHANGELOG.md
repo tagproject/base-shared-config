@@ -3,19 +3,15 @@
 ## Dependencies
 
 <details>
-<summary>Dependencies</summary>
-
-- Changed **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config)** from `^4.0.8` to `^4.0.9`
-
-</details>
-
-<details>
 <summary>Dev Dependencies</summary>
 
-- Changed **[changelog-guru](https://www.npmjs.com/package/changelog-guru)** from `^4.0.1` to `^4.0.2`
-- Changed **[figma-portal](https://www.npmjs.com/package/figma-portal)** from `^0.10.1` to `^0.10.2`
+- Added **[@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config)** with `^1.0.0`
 
 </details>
+
+# Important Internal Changes
+
+- Vscode configs now shared from `vscode-shared-config` [`7f96d77`](https://github.com/tagproject/base-shared-config/commit/7f96d77722859d5f4508fe442220a0bded992787)
 
 ---
 
