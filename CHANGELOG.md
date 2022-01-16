@@ -5,13 +5,10 @@
 <details>
 <summary>Dev Dependencies</summary>
 
-- Added **[@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config)** with `^1.0.0`
+- Added **[cspell](https://www.npmjs.com/package/cspell)** with `^5.15.2`
+- Changed **[@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config)** from `^1.0.0` to `^1.1.2`
 
 </details>
-
-# Important Internal Changes
-
-- Vscode configs now shared from `vscode-shared-config` [`7f96d77`](https://github.com/tagproject/base-shared-config/commit/7f96d77722859d5f4508fe442220a0bded992787)
 
 ---
 
