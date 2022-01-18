@@ -23,11 +23,7 @@ ignorePatterns:
     ".github",
     ".husky",
     ".sharedconfig.yml",
-    "CODE_OF_CONDUCT.md",
     "codecov.yml",
-    "docs/",
-    "example/",
-    "media/",
     "node_modules/",
   ]
 
