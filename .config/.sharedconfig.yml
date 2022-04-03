@@ -1,0 +1,2 @@
+overrideScripts:
+  "prepare:config": "npm-run-all build && node --experimental-specifier-resolution=node bin/base-shared-config"
