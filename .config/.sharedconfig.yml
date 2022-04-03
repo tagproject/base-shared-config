@@ -1,2 +1,2 @@
 overrideScripts:
-  "prepare:config": "exit 0"
+  "prepare:config": "npm-run-all build && node --experimental-specifier-resolution=node bin/base-shared-config"

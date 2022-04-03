@@ -3,24 +3,27 @@
 ## Dependencies
 
 <details>
-<summary>Dev Dependencies</summary>
+<summary>Dependencies</summary>
 
-- Changed **[@tagproject/docs-shared-config](https://www.npmjs.com/package/@tagproject/docs-shared-config)** from `^1.0.0` to `^1.0.1`
-- Changed **[@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config)** from `^1.2.0` to `^1.2.2`
-- Changed **[changelog-guru](https://www.npmjs.com/package/changelog-guru)** from `^4.0.2` to `^4.0.3`
-- Changed **[cspell](https://www.npmjs.com/package/cspell)** from `^5.15.2` to `^5.19.2`
-- Changed **[prettier](https://www.npmjs.com/package/prettier)** from `^2.5.1` to `^2.6.0`
-- Bumped **[figma-portal](https://www.npmjs.com/package/figma-portal)** from `^0.10.2` to `^0.11.0`
+- Changed **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config)** from `^4.0.11` to `^4.0.12`
 
 </details>
 
-# :fire: Improvements
+<details>
+<summary>Dev Dependencies</summary>
 
-- Add auto merge config [`3d81ec9`](https://github.com/tagproject/base-shared-config/commit/3d81ec9f4132c1be2a9169e31240dc3b3800cb3a)
+- Changed **[@tagproject/docs-shared-config](https://www.npmjs.com/package/@tagproject/docs-shared-config)** from `^1.0.1` to `^1.0.2`
+- Changed **[@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config)** from `^1.2.2` to `^1.2.4`
+- Changed **[changelog-guru](https://www.npmjs.com/package/changelog-guru)** from `^4.0.3` to `^4.0.4`
+- Changed **[cspell](https://www.npmjs.com/package/cspell)** from `^5.19.2` to `^5.19.5`
+- Changed **[prettier](https://www.npmjs.com/package/prettier)** from `^2.6.0` to `^2.6.2`
+- Bumped **[figma-portal](https://www.npmjs.com/package/figma-portal)** from `^0.11.0` to `^1.0.0`
 
-# :memo: Internal changes
+</details>
 
-- Rename `auto-merge` workflow [`4e220b5`](https://github.com/tagproject/base-shared-config/commit/4e220b58436681a453334a757add89f1f9272932)
+# :bug: Bug Fixes
+
+- Add self configurating script in `package.json` [`8688a86`](https://github.com/tagproject/base-shared-config/commit/8688a861a28086ee9a5b5ab8163dc5449d72c4c9)
 
 ---
 
