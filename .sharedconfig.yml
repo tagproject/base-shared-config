@@ -44,7 +44,7 @@ scripts:
 dependencies:
   - "changelog-guru"
   - "figma-portal"
-  - "husky": "7.x"
+  - "husky": "8.x"
   - "npm-run-all"
 
 package:
