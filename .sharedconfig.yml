@@ -35,7 +35,6 @@ scripts:
   "build": "node --experimental-specifier-resolution=node node_modules/.bin/standard-shared-config build"
   "generate": "npm-run-all generate:*"
   "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
-  "generate:media": "node --experimental-specifier-resolution=node node_modules/.bin/figma-portal extract -d media -p GitHub"
   "prepare": "npm-run-all prepare:*"
   "prepare:config": "node --experimental-specifier-resolution=node node_modules/.bin/base-shared-config"
   "prepare:husky": "husky install"
@@ -43,7 +42,6 @@ scripts:
 
 dependencies:
   - "changelog-guru"
-  - "figma-portal"
   - "husky": "8.x"
   - "npm-run-all"
 
