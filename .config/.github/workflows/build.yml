@@ -29,7 +29,7 @@ jobs:
           echo NPM: $(npm -v)
           npm i semver --no-package-lock
           CONFIG=$(node ./.github/scripts/config.js | sed 's/ //g')
-          echo "{config}={$CONFIG}" >> $GITHUB_OUTPUT
+          echo "config=$CONFIG" >> $GITHUB_OUTPUT
           echo $CONFIG
 
   build:
@@ -74,7 +74,7 @@ jobs:
           FILTER: "[.jobs[] | select(.status==\"completed\" and .conclusion==\"failure\") | { status: .conclusion, matrix: .name}] | length"
         run: |
           failure_count=$(curl -X GET -s -u $USER $URL | jq "$FILTER")
-          echo "::set-output name=failure_count::$failure_count"
+          echo "failure_count=$failure_count" >> $GITHUB_OUTPUT
           echo Failure jobs count: $failure_count
 
       - if: ${{ steps.status.outputs.failure_count > 0 }}
