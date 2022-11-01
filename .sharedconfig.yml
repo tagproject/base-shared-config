@@ -9,7 +9,6 @@ mergeRules:
 ignorePatterns:
   ".gitignore": [
     ".env",
-    "/.figma.yml",
     "/.husky/",
     "bin",
     "lib",
@@ -18,7 +17,6 @@ ignorePatterns:
   ".npmignore": [
     ".config",
     ".env",
-    ".figma.yml",
     ".gitattributes",
     ".github",
     ".husky",

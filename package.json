@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/base-shared-config",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Base shared config for tagproject packages",
   "license": "MIT",
   "homepage": "https://github.com/tagproject/base-shared-config#readme",
@@ -48,7 +48,6 @@
     "@tagproject/vscode-shared-config": "^2.0.2",
     "changelog-guru": "^4.0.6",
     "cspell": "^6.13.3",
-    "figma-portal": "^1.0.2",
     "husky": "^8.0.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1"
