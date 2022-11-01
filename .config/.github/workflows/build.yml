@@ -17,7 +17,7 @@ jobs:
       config: ${{ steps.set-config.outputs.config }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -29,7 +29,7 @@ jobs:
           echo NPM: $(npm -v)
           npm i semver --no-package-lock
           CONFIG=$(node ./.github/scripts/config.js | sed 's/ //g')
-          echo "::set-output name=config::$CONFIG"
+          echo "{config}={$CONFIG}" >> $GITHUB_OUTPUT
           echo $CONFIG
 
   build:
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Use Node.js ${{ matrix.node }}
       uses: actions/setup-node@v2

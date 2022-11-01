@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Sync project labels
       uses: micnncim/action-label-syncer@v1
@@ -24,7 +24,7 @@ jobs:
       config: ${{ steps.set-config.outputs.config }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -36,7 +36,7 @@ jobs:
           echo NPM: $(npm -v)
           npm i semver --no-package-lock
           CONFIG=$(node ./.github/scripts/config.js | sed 's/ //g')
-          echo "::set-output name=config::$CONFIG"
+          echo "{config}={$CONFIG}" >> $GITHUB_OUTPUT
           echo $CONFIG
 
   publish:
@@ -73,7 +73,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Use Node.js v${{ env.NODE_VERSION }}
       uses: actions/setup-node@v2
@@ -106,7 +106,7 @@ jobs:
       DISCORD_SUCCESS_AVATAR: https://cdn.jsdelivr.net/gh/tagproject/art/bot/bot-success.png
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Use Node.js
       uses: actions/setup-node@v2
