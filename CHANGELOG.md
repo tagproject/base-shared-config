@@ -1,6 +1,6 @@
 # :memo: Internal changes
 
-- Fix readme code blocks [`f6a3db0`](https://github.com/tagproject/base-shared-config/commit/f6a3db027a7143305e2bee380e2e984e31527a04)
+- Fix scripts desc [`76b74d4`](https://github.com/tagproject/base-shared-config/commit/76b74d4a745657ce4f3a770d260992671fd34876)
 
 ---
 
