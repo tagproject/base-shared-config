@@ -1,4 +1,4 @@
-<p align="center"><img src="https://cdn.jsdelivr.net/gh/tagproject/base-shared-config/media/banner.svg" alt="Package logo"></p>
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/tagproject/art/packages/base-shared-config/banner.svg" alt="Package logo"></p>
 
 <p align="center">
     <a href="https://github.com/tagproject/base-shared-config/actions"><img src="https://github.com/tagproject/base-shared-config/actions/workflows/build.yml/badge.svg" alt="Build Status"></a>
@@ -22,3 +22,45 @@ npm install @tagproject/base-shared-config --save-dev
 - Run `npm run prepare`
 
 > use `node --experimental-specifier-resolution=node node_modules/.bin/base-shared-config` while [ESM](https://nodejs.org/api/esm.html) is in `Experimental`
+
+## Configs
+
+### extract actions and hooks:
+
+- `.github`
+- `.husky`
+
+### merge files:
+
+- `.gitignore`
+- `.npmignore`
+- `.husky/commit-msg`
+
+### append to `package.json`:
+
+#### scripts:
+
+- `build` - build shared config
+- `generate` - run all `generate:*`
+  `generate:changelog` - generate changelog
+  `prepare` - run all `prepare:*`
+- `prepare:config` - rebuild local configs
+  `prepare:husky` - install husky hooks
+  `release` - lint, build config, generate changelog and bump package version
+
+#### other
+
+```json
+{
+  exports: "./lib/index.js"
+  manager: "npm"
+  type: "module"
+  types: "./lib/index.d.ts"
+}
+```
+
+### check and install dependencies:
+
+- [changelog-guru](https://www.npmjs.com/package/changelog-guru): `latest`
+- [husky](https://www.npmjs.com/package/husky): `8.x`
+- [npm-run-all](https://www.npmjs.com/package/npm-run-all): `latest`
