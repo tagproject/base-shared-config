@@ -42,11 +42,11 @@ npm install @tagproject/base-shared-config --save-dev
 
 - `build` - build shared config
 - `generate` - run all `generate:*`
-  `generate:changelog` - generate changelog
-  `prepare` - run all `prepare:*`
+- `generate:changelog` - generate changelog
+- `prepare` - run all `prepare:*`
 - `prepare:config` - rebuild local configs
-  `prepare:husky` - install husky hooks
-  `release` - lint, build config, generate changelog and bump package version
+- `prepare:husky` - install husky hooks
+- `release` - lint, build config, generate changelog and bump package version
 
 #### other:
 
