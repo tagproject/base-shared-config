@@ -10,33 +10,8 @@ on:
       - '*'
 
 jobs:
-  config:
-    name: Configure
-    runs-on: ubuntu-latest
-    outputs:
-      config: ${{ steps.set-config.outputs.config }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-
-      - name: Create config
-        id: set-config
-        run: |
-          echo Node: $(node -v)
-          echo NPM: $(npm -v)
-          npm i semver --no-package-lock
-          CONFIG=$(node ./.github/scripts/config.js | sed 's/ //g')
-          echo "config=$CONFIG" >> $GITHUB_OUTPUT
-          echo $CONFIG
-
   build:
     name: Build
-    needs: [ config ]
-    strategy:
-      matrix: ${{ fromJson(needs.config.outputs.config).node.matrix }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
@@ -44,15 +19,6 @@ jobs:
 
     - name: Use Node.js ${{ matrix.node }}
       uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node }}
-
-    - name: Cache node modules
-      id: cache-npm
-      uses: actions/cache@v3
-      with:
-        path: ~/.npm
-        key: npm-${{ runner.os }}-${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}
 
     - name: Install Dependencies
       run: npm ci
