@@ -48,14 +48,14 @@ npm install @tagproject/base-shared-config --save-dev
   `prepare:husky` - install husky hooks
   `release` - lint, build config, generate changelog and bump package version
 
-#### other
+#### other:
 
 ```json
 {
-  exports: "./lib/index.js"
-  manager: "npm"
-  type: "module"
-  types: "./lib/index.d.ts"
+  "exports": "./lib/index.js",
+  "manager": "npm",
+  "type": "module",
+  "types": "./lib/index.d.ts"
 }
 ```
 
