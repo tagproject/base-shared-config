@@ -21,8 +21,6 @@ npm install @tagproject/base-shared-config --save-dev
 - Add `"prepare": "npm-run-all prepare:*"`
 - Run `npm run prepare`
 
-> use `node --experimental-specifier-resolution=node node_modules/.bin/base-shared-config` while [ESM](https://nodejs.org/api/esm.html) is in `Experimental`
-
 ## Configs
 
 ### extract actions and hooks:
@@ -32,9 +30,9 @@ npm install @tagproject/base-shared-config --save-dev
 
 ### merge files:
 
+- `.husky/commit-msg`
 - `.gitignore`
 - `.npmignore`
-- `.husky/commit-msg`
 
 ### append to `package.json`:
 
@@ -48,7 +46,13 @@ npm install @tagproject/base-shared-config --save-dev
 - `prepare:husky` - install husky hooks
 - `release` - lint, build config, generate changelog and bump package version
 
-#### other:
+#### check and dependencies:
+
+- [changelog-guru](https://www.npmjs.com/package/changelog-guru): `latest`
+- [husky](https://www.npmjs.com/package/husky): `8.x`
+- [npm-run-all](https://www.npmjs.com/package/npm-run-all): `latest`
+
+#### configure package:
 
 ```json
 {
@@ -58,9 +62,3 @@ npm install @tagproject/base-shared-config --save-dev
   "types": "./lib/index.d.ts"
 }
 ```
-
-### check and install dependencies:
-
-- [changelog-guru](https://www.npmjs.com/package/changelog-guru): `latest`
-- [husky](https://www.npmjs.com/package/husky): `8.x`
-- [npm-run-all](https://www.npmjs.com/package/npm-run-all): `latest`

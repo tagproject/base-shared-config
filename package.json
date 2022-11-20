@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/base-shared-config",
-  "version": "3.3.2",
+  "version": "3.3.4",
   "description": "Base shared config for tagproject packages",
   "license": "MIT",
   "homepage": "https://github.com/tagproject/base-shared-config#readme",
@@ -28,26 +28,26 @@
     "node": "^14.13.1 || >=16.0.0"
   },
   "scripts": {
-    "build": "node --experimental-specifier-resolution=node node_modules/.bin/standard-shared-config build",
+    "build": "standard-shared-config build",
     "generate": "npm-run-all generate:*",
-    "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump",
+    "generate:changelog": "changelog generate --bump",
     "lint": "npm-run-all lint:*",
     "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"**/*.{js,ts,tsx,md,yml,json}\"",
     "prepare": "npm-run-all prepare:*",
-    "prepare:config": "npm-run-all build && node --experimental-specifier-resolution=node bin/base-shared-config",
-    "prepare:docs": "node --experimental-specifier-resolution=node node_modules/.bin/docs-shared-config",
+    "prepare:config": "npm-run-all build && node bin/base-shared-config",
+    "prepare:docs": "docs-shared-config",
     "prepare:husky": "husky install",
-    "prepare:vscode": "node --experimental-specifier-resolution=node node_modules/.bin/vscode-shared-config",
+    "prepare:vscode": "vscode-shared-config",
     "release": "npm-run-all prepare lint build generate"
   },
   "dependencies": {
-    "standard-shared-config": "^4.0.15"
+    "standard-shared-config": "^4.0.17"
   },
   "devDependencies": {
-    "@tagproject/docs-shared-config": "^1.0.4",
-    "@tagproject/vscode-shared-config": "^2.0.2",
-    "changelog-guru": "^4.0.6",
-    "cspell": "^6.14.2",
+    "@tagproject/docs-shared-config": "^1.1.1",
+    "@tagproject/vscode-shared-config": "^2.0.4",
+    "changelog-guru": "^4.0.8",
+    "cspell": "^6.14.3",
     "husky": "^8.0.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1"
