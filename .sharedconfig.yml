@@ -30,11 +30,11 @@ executableFiles: [
 ]
 
 scripts:
-  "build": "node --experimental-specifier-resolution=node node_modules/.bin/standard-shared-config build"
+  "build": "standard-shared-config build"
   "generate": "npm-run-all generate:*"
-  "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
+  "generate:changelog": "changelog generate --bump"
   "prepare": "npm-run-all prepare:*"
-  "prepare:config": "node --experimental-specifier-resolution=node node_modules/.bin/base-shared-config"
+  "prepare:config": "base-shared-config"
   "prepare:husky": "husky install"
   "release": "npm-run-all prepare lint build generate"
 
