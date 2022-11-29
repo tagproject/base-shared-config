@@ -46,13 +46,13 @@ npm install @tagproject/base-shared-config --save-dev
 - `prepare:husky` - install husky hooks
 - `release` - lint, build config, generate changelog and bump package version
 
-#### check and dependencies:
+#### dependencies:
 
 - [changelog-guru](https://www.npmjs.com/package/changelog-guru): `latest`
 - [husky](https://www.npmjs.com/package/husky): `8.x`
 - [npm-run-all](https://www.npmjs.com/package/npm-run-all): `latest`
 
-#### configure package:
+#### configure:
 
 ```json
 {
