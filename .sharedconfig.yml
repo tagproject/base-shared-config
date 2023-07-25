@@ -31,12 +31,12 @@ executableFiles: [
 
 scripts:
   "build": "standard-shared-config build"
-  "generate": "npm-s generate:*"
+  "generate": "run-s generate:*"
   "generate:changelog": "changelog generate --bump"
-  "prepare": "npm-s prepare:*"
+  "prepare": "run-s prepare:*"
   "prepare:config": "base-shared-config"
   "prepare:husky": "husky install"
-  "release": "npm-s prepare lint build generate"
+  "release": "run-s prepare lint build generate"
 
 package:
   exports: "./lib/index.js"

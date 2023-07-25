@@ -30,7 +30,7 @@
   },
   "scripts": {
     "build": "standard-shared-config build",
-    "generate": "npm-s generate:*",
+    "generate": "run-s generate:*",
     "generate:changelog": "changelog generate --bump",
     "lint": "npm-run-all lint:*",
     "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"**/*.{js,ts,tsx,md,yml,json}\"",
@@ -39,7 +39,7 @@
     "prepare:docs": "docs-shared-config",
     "prepare:husky": "husky install",
     "prepare:vscode": "vscode-shared-config",
-    "release": "npm-s prepare lint build generate"
+    "release": "run-s prepare lint build generate"
   },
   "dependencies": {
     "standard-shared-config": "5.0.0-beta.0"
