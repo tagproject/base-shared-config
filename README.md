@@ -18,7 +18,7 @@ npm install @tagproject/base-shared-config --save-dev
 
 - Add `"prepare:config": "base-shared-config"` to `scripts` property in your `package.json`
 - Rename your `prepare` scripts to `prepare:[NAME]`
-- Add `"prepare": "npm-run-all prepare:*"`
+- Add `"prepare": "run-s prepare:*"`
 - Run `npm run prepare`
 
 ## Configs
@@ -48,9 +48,9 @@ npm install @tagproject/base-shared-config --save-dev
 
 #### dependencies:
 
-- [changelog-guru](https://www.npmjs.com/package/changelog-guru): `latest`
+- [changelog-guru](https://www.npmjs.com/package/changelog-guru): `4.x`
 - [husky](https://www.npmjs.com/package/husky): `8.x`
-- [npm-run-all](https://www.npmjs.com/package/npm-run-all): `latest`
+- [npm-run-all](https://www.npmjs.com/package/npm-run-all): `4.x`
 
 #### configure:
 

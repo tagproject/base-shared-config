@@ -1,2 +1,2 @@
 overrideScripts:
-  "prepare:config": "npm-run-all build && node bin/base-shared-config"
+  "prepare:config": "run-s build && node bin/base-shared-config"
