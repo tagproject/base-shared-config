@@ -39,7 +39,7 @@
     "release": "run-s prepare lint build generate"
   },
   "dependencies": {
-    "standard-shared-config": "5.1.0"
+    "standard-shared-config": "5.1.1"
   },
   "devDependencies": {
     "@tagproject/docs-shared-config": "^3.0.2",
