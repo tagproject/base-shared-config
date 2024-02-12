@@ -39,15 +39,15 @@
     "release": "run-s prepare lint build generate"
   },
   "dependencies": {
-    "standard-shared-config": "5.1.0"
+    "standard-shared-config": "5.x"
   },
   "devDependencies": {
     "@tagproject/docs-shared-config": "^3.0.2",
-    "@tagproject/vscode-shared-config": "^4.0.1"
+    "@tagproject/vscode-shared-config": "^4.0.2"
   },
   "peerDependencies": {
     "changelog-guru": "4.x",
-    "husky": "8.x",
+    "husky": "9.x",
     "npm-run-all": "4.x"
   }
 }
