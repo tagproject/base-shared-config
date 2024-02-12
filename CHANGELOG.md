@@ -1,3 +1,14 @@
+# Important Changes
+
+## Dependencies
+
+<details>
+<summary>Peer Dependencies</summary>
+
+- Bumped **[changelog-guru](https://www.npmjs.com/package/changelog-guru)** from `4.x` to `5.x`
+
+</details>
+
 ---
 
 # Contributors
