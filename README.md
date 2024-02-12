@@ -49,7 +49,7 @@ npm install @tagproject/base-shared-config --save-dev
 #### dependencies:
 
 - [changelog-guru](https://www.npmjs.com/package/changelog-guru): `4.x`
-- [husky](https://www.npmjs.com/package/husky): `8.x`
+- [husky](https://www.npmjs.com/package/husky): `9.x`
 - [npm-run-all](https://www.npmjs.com/package/npm-run-all): `4.x`
 
 #### configure:
