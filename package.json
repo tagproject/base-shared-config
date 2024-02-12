@@ -1,13 +1,10 @@
 {
   "name": "@tagproject/base-shared-config",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Base shared config for tagproject packages",
   "license": "MIT",
   "homepage": "https://github.com/tagproject/base-shared-config#readme",
-  "author": {
-    "name": "Daniil Ryazanov",
-    "email": "kein@tagproject.ru"
-  },
+  "author": "Daniil Ryazanov <kein@tagproject.ru>",
   "keywords": [
     "base",
     "config",
