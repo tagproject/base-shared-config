@@ -1,32 +1,42 @@
 release:
 - base-branch: 'main'
+
 workflow:
 - changed-files:
   - any-glob-to-any-file: ['.github/**/*', './.gitignore', './.npmignore']
+
 config:
 - changed-files:
   - any-glob-to-any-file: ['.sharedconfig.yml', '.husky/**/*']
+
 project:
 - changed-files:
   - any-glob-to-any-file:  ['package-lock.json', 'package.json', 'LICENSE']
+
 docs:
 - changed-files:
   - any-glob-to-any-file: ['docs/**/*', '*.md', '.ghinfo']
+
 shared-config:workflow:
 - changed-files:
   - any-glob-to-any-file: ['.config/.github/**/*', '.config/.gitignore', '.config/.npmignore']
+
 shared-config:code-style:
 - changed-files:
   - any-glob-to-any-file: ['.config/.editorconfig', '.config/.eslintignore', '.config/.eslintrc', '.config/.prettierignore', '.config/.prettierrc']
+
 shared-config:test:
 - changed-files:
   - any-glob-to-any-file: ['.config/jest.config.js']
+
 shared-config:ts:
 - changed-files:
   - any-glob-to-any-file: ['.config/tsconfig.json']
+
 shared-config:scripts:
 - changed-files:
   - any-glob-to-any-file: ['scripts.js']
+
 shared-config:dependencies:
 - changed-files:
   - any-glob-to-any-file: ['dependencies.js']
