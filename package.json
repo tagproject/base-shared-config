@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/base-shared-config",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "Base shared config for tagproject packages",
   "license": "MIT",
   "homepage": "https://github.com/tagproject/base-shared-config#readme",
@@ -46,7 +46,7 @@
     "@tagproject/vscode-shared-config": "^4.0.2"
   },
   "peerDependencies": {
-    "changelog-guru": "4.x",
+    "changelog-guru": "5.x",
     "husky": "9.x",
     "npm-run-all": "4.x"
   }
