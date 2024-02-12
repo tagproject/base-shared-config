@@ -46,7 +46,7 @@
     "@tagproject/vscode-shared-config": "^4.0.2"
   },
   "peerDependencies": {
-    "changelog-guru": "4.x",
+    "changelog-guru": "5.x",
     "husky": "9.x",
     "npm-run-all": "4.x"
   }
